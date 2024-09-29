@@ -9,13 +9,13 @@ from PIL import Image
 import tensorflow as tf
 import requests
 
-import time 
+# import time 
 
 import matplotlib.pyplot as plt
 
 @st.cache_resource
 def load_model():
-    time.sleep(20)
+    # time.sleep(20)
     # Use the raw URL of the model file
     model_url = "https://raw.githubusercontent.com/Prajwalsharma1/FirstProject/master/my_model.keras"
     
