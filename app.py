@@ -42,7 +42,8 @@ def load_model():
         raise Exception(f"Failed to download model. Status code: {response.status_code}")
 model = load_model()
 
-st.write("reached")
+# st.write("reached")
+
 def get_bar_graph(pred):
     plt.style.use(plt.style.available[6])
     pred_ = [pred[0][0],1-pred[0][0]]
