@@ -7,7 +7,6 @@ import numpy as np
 from PIL import Image
 
 import tensorflow as tf
-import keras
 import requests
 
 # import time 
