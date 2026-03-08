@@ -7,6 +7,7 @@ import numpy as np
 from PIL import Image
 
 import tensorflow as tf
+import keras
 import requests
 
 # import time 
@@ -32,6 +33,7 @@ def load_model():
             f.write(response.content)
         
         # Load the model from the temporary file
+        keras.config.enable_legacy_serialization()
         model = tf.keras.models.load_model(temp_file_path , compile = False)
         
         # Clean up the temporary file
