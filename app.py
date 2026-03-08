@@ -33,8 +33,7 @@ def load_model():
             f.write(response.content)
         
         # Load the model from the temporary file
-        keras.config.enable_legacy_serialization()
-        model = tf.keras.models.load_model(temp_file_path , compile = False)
+        model = tf.keras.models.load_model(temp_file_path, compile=False)
         
         # Clean up the temporary file
         os.remove(temp_file_path)
